@@ -100,8 +100,6 @@ printf("Chama no \"Zap"\ bb");
 | \000 | Caractere cujo código ASCII em Octal é 000|
 | \Xnn | Caractere cujo código ASCII em Hexadecimal é nn|
 | %% | Caractere %|
-|
-
 
 - Os **comentários** são escritos entre **- /*** e ***/ -** para comentar blocos ou **//** para comentar somente uma linha e são ignorados pelo compilador (a menos que se encontrem dentro de *string* ).
 ***Não pode existir comentários dentro de comentários***
