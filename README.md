@@ -9,8 +9,8 @@
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 
-  <a href="https://github.com/fdAssis/desafio-01/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/fdAssis/desafio-01?style=social">
+  <a href="https://github.com/fdAssis/Linguagem_C/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/fdAssis/Linguagem_C?style=social">
   </a>
 </p>
 
