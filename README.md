@@ -46,7 +46,7 @@ void bloco2() {
 - Cada intrução deve ser seguida de um ponto-e-vírgula **( ; )**.
 ```c
 ...
-printf("Grandes poderes trazem grandes responsabilidades");
+printf("A tecnologia para tornar algo invisível é tão infinitamente complexa que, é muito mais simples e eficaz remover a coisa e esquecer o assunto.");
 
 system("pause");
 ...
@@ -60,7 +60,7 @@ system("pause");
 - Para escrever uma mensagem na tela usa-se a função **printf()**.
 ```c
 void main() {
-  printf("Não se apegue ás coisas as vezes é preciso se desprender");
+  printf("Acho mais importante estar feliz do que estar certo");
 
 }
 ```
@@ -69,7 +69,7 @@ void main() {
 #include <stdio.h>
 
 void main(){
-  printf("Posso fazer isso o dia todo."); 
+  printf("Por que as pessoas nascem? por que elas morrem? por que elas passam um tempo tao grande entre o nascimento e a morte usando relogios digitais"); 
 
 }
 ```
@@ -79,7 +79,7 @@ void main(){
 ```c
 ...
 // Forma de escrever uma string em que as aspas sejam um caractere não delimitador 
-printf("Chama no \"Zap"\ bb");
+printf(" \"Amor:"\ muito dolososo. Evite, se possivel");
 ...
 ```
 ***A lista completa dos caracteres que podem ter que ser representados, precedidos do caractere especial *\\* é:***
@@ -106,10 +106,65 @@ printf("Chama no \"Zap"\ bb");
 ```c
 void main() {
   /* inicio do comentario 1
-    /* printf("Ola\n"); Comentário Interno */
+    /* printf("42\n"); Comentário Interno */
   */  
 }
 ```
+## :tomato: Capítulo 2
+###  Tipos de Dados Básicos
+
+- **Variáveis**: Uma variável é nada mais que um nome que damos a uma determinada posição de memória para conter um valor de um determinado tipo. O valor contido em uma variável pode variar ao longo da execução de um programa. **Uma variável deve ser sempre definida antes de ser usada.**
+```c
+...
+int i; // i é uma variável do tipo inteiro
+char ch1, novo_char; // ch1 e novo_char sao vars do tipo char
+float resultado, divisao; // [...]
+double total; // [...]
+...
+```
+- **Declaração de variáveis tem que ser sempre realizada antes de sua utilização e antes de qualquer intrução**
+```c
+void main(){
+  Declaração de Variáveis
+
+  Intrução1;
+  Intrução1;
+  ...
+}
+```
+  - ## **Tipos de dados**
+    - Inteiros - **int**
+      - As variáveis declaradas do tipo inteiro são utilizadas para armazenar valores que pertencem ao conjunto dos números naturais positivos e negativos. **Ex: 2, -42, +232, 0**,
+
+      **Operações sobre Inteiros**
+
+      | Operação | Descrição | Exemplo | Resultado |
+      | --- | --- | ---| --- |
+      | + | Soma | 40 + 2 | 42|
+      | - | Subtração | 44 - 4 | 42|
+      | * | Multiplicação | 7 * 6 | 42|
+      | / | Divisão Inteira | 42 / 1 | 42|
+      | % | Resto da Divisão Inteira (**Módulo**) | 42 % 2020 | 42|
+      ***Qualquer operação entre inteiros(int) retorna um inteiro.***
+      ```c
+      #include <stdio.h>
+
+      void main() {
+         int numero = 321;
+
+         printf("O valor de numero = %d e o valor seguinte = %d\n", num, num+1);
+         //..."O valor de numero = <inteiro> e o valor seguinte = <inteiro>
+
+         /*
+          <inteiro> representa o valor inteiro que está guardado numa variável, contante ou é o resultado de qualquer expressão.
+
+          O formato de escrita de um Inteiro na função printf é %d.
+          O primeiro %d será substituido pelo valor da variável 'numero' e o %d seguinte será substituido pelo resultado da soma de 'numero+1'.
+         */
+      }
+      ```
+
+
 
 ## :memo: Licença
 
