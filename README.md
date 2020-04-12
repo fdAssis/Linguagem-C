@@ -134,7 +134,7 @@ void main(){
 ```
   - ## **Tipos de dados**
     - Inteiros - **int**
-      - As variáveis declaradas do tipo inteiro são utilizadas para armazenar valores que pertencem ao conjunto dos números naturais positivos e negativos. **Ex: 2, -42, +232, 0**,
+      - As variáveis declaradas do tipo inteiro são utilizadas para armazenar valores que pertencem ao conjunto dos números naturais positivos e negativos. **Ex: 2, -42, +232, 0**.
 
       **Operações sobre Inteiros**
 
@@ -145,6 +145,8 @@ void main(){
       | * | Multiplicação | 7 * 6 | 42|
       | / | Divisão Inteira | 42 / 1 | 42|
       | % | Resto da Divisão Inteira (**Módulo**) | 42 % 2020 | 42|
+      
+
       ***Qualquer operação entre inteiros(int) retorna um inteiro.***
       ```c
       #include <stdio.h>
