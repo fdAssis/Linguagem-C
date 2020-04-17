@@ -110,7 +110,7 @@ void main() {
   */  
 }
 ```
-## :tomato: Capítulo 2
+## :grapes: Capítulo 2
 ###  Tipos de Dados Básicos
 
 - **Variáveis**: Uma variável é nada mais que um nome que damos a uma determinada posição de memória para conter um valor de um determinado tipo. O valor contido em uma variável pode variar ao longo da execução de um programa. **Uma variável deve ser sempre definida antes de ser usada.**
@@ -154,11 +154,11 @@ void main(){
       void main() {
          int numero = 321;
 
-         printf("O valor de numero = %d e o valor seguinte = %d\n", num, num+1);
+         printf("O valor de numero = %d e o valor seguinte = %d\n", numero, numero+1);
          //..."O valor de numero = <inteiro> e o valor seguinte = <inteiro>
 
          /*
-          <inteiro> representa o valor inteiro que está guardado numa variável, contante ou é o resultado de qualquer expressão.
+          <inteiro> representa o valor inteiro que está guardado numa variável, constante ou é o resultado de qualquer expressão.
 
           O formato de escrita de um Inteiro na função printf é %d.
           O primeiro %d será substituido pelo valor da variável 'numero' e o %d seguinte será substituido pelo resultado da soma de 'numero+1'.
