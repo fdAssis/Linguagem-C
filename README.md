@@ -23,7 +23,7 @@
   Uma forma de 
 
 ## :tomato: Capítulo 1
-###  Primeiros conceitos de C
+#  Primeiros conceitos de C
 - Em C, um programa começa com a função **main()**.
 ```c
 void main() {
@@ -111,7 +111,7 @@ void main() {
 }
 ```
 ## :grapes: Capítulo 2
-###  Tipos de Dados Básicos
+#  Tipos de Dados Básicos
 
 - **Variáveis**: Uma variável é nada mais que um nome que damos a uma determinada posição de memória para conter um valor de um determinado tipo. O valor contido em uma variável pode variar ao longo da execução de um programa. **Uma variável deve ser sempre definida antes de ser usada.**
 ```c
@@ -132,8 +132,26 @@ void main(){
   ...
 }
 ```
+ - Quando são escritas várias atribuições consecutivas, estas são realizadas não da esquerda para a direita, mas sim da direita para a esquerda.
+
+    - a = b = c = d = 5; 
+
+    - **1.** Como se trata de atribuições, estas são realizadas da direita para a esquerda.
+
+    - **2.** A primeira a ser realizada é d = 5.
+
+    - **3.** Como foi referido anteriormente, o valor atribuído a d é devolvido como resultado da atribuição:
+
+    - **4.** O valor devolvido (5) é então atribuído a c.
+
+    - **5.** Como é uma atribuição, devolve o valor atribuído (5) que é colocado em b e em a pelo mesmo processo.
+
+    - **6.** A atribuição do valor 5 à variável a devolve também um valor, mas que não é aproveitado.
+
+
   - ## **Tipos de dados**
-    - Inteiros - **int**
+      ### **Inteiros** - ***int***
+      
       - As variáveis declaradas do tipo inteiro são utilizadas para armazenar valores que pertencem ao conjunto dos números naturais positivos e negativos. **Ex: 2, -42, +232, 0**.
 
       **Operações sobre Inteiros**
@@ -165,8 +183,94 @@ void main(){
          */
       }
       ```
+      
+      - Da mesma forma que existe a função printf para a escrita de valores, existe uma função correspondente para a leitura de valores — a função scanf.
+      
+      ```C
+      #include<stdio.h>
 
+      main(){
+        int numero;
+        
+        printf("Introduza um numero: ");
+        scanf("%d, &numero");
 
+        printf("O Numero digitado foi: %d\n", numero);
+      }
+
+      ```
+      ***A função scanf (leitura formatada) funciona de forma semelhante à função printf. Uma vez que ela foi implementada para a leitura de valores, a string inicial deve conter apenas o formato das variáveis que queremos ler. Depois de especificados os formatos de leitura na string, devem ser colocadas todas as variáveis correspondentes pela ordem em que ocorrem os formatos, precedidas de um &.***
+
+      ## **Inteiros e Variações**
+      - O tamanho em bytes de um inteiro varia de arquitetura para arquitetura, sendo os valores mais habituais de 2 ou 4 bytes.
+
+        Para saber qual a dimensão de um inteiro (ou de qualquer tipo ou variável), o C disponibiliza um operador denominado sizeof, cuja sintaxe é semelhante à utilizada para invocar uma função.
+
+        - **sizeof <expressão> ou sizeof ( \<tipo> )**
+
+        ```C
+        #include <stdio.h>
+
+        main(){
+          printf("O tamanho em bytes de um Inteiro = %d\n", sizeof(int));
+        }
+        ```
+        Na declaração de um inteiro podem ser utilizados quatro prefixos distintos para melhor definição das características da variável.
+
+        **•short** — Inteiro pequeno (2 bytes)
+
+        **•long** — Inteiro grande (4 bytes)
+
+        **•signed** — Inteiro com sinal (numeros negativos e positivos)
+
+        **•unsigned** — Inteiro sem sinal (apenas numeros positivos)
+
+        ### **short e long**
+
+        - Para garantirmos que o inteiro n usa apenas 2 bytes de memória, independentemente da arquitetura utilizada, devemos declarar a variável como:
+
+          **short int n; ( ou short n; )**
+
+        - Para garantirmos que o inteiro n usa sempre 4 bytes de memória, independentemente da arquitetura utilizada, devemos declarar a variável como:
+
+          **long int n; ( ou long n; )** 
+        
+        **O formato de leitura e escrita de variáveis inteiras short e long nas funções scanf e printf deve ser precedido dos prefixos h (short) e l (long).**
+
+        ```C
+        #include<stdio.h>
+
+        main(){
+          short int idade;
+          int montante;
+          long int num_conta;
+
+          printf("Qual sua idade: ");
+          scanf("%hd", &idade);
+
+          printf("Qual o montante a depositar: ");
+          scanf("%d", &montante);
+
+          printf("Qual o numero da conta: ");
+          scanf("%ld", &num_conta);
+
+          printf("Uma pessoa de %hd anos depositou R$%d na sua conta %ld\n", idade, montante, num_conta);
+        }
+        ```
+
+        ## **signed e unsigned**
+        
+        - Se deseja que a variável contenha apenas valores positivos, deverá ser declarada com o prefixo unsigned.
+        
+          **unsigned int idade;**
+        
+        - O prefixo signed, antes de um inteiro, não é necessário, pois por padrão todos os inteiros quando são criados são sinalizados (signed).
+
+        **Ao trabalhar com valores sem sinal, o conjunto de valores com que podemos trabalhar no lado positivo é ampliado.**
+
+        **O formato de leitura e escrita de variáveis inteiras sem sinal (unsigned int), utilizando as funções scanf e printf, é %u em vez de %d.**
+
+       
 
 ## :memo: Licença
 
