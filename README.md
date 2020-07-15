@@ -20,7 +20,7 @@
 </p>
 
 ## :pushpin: Sobre o repositorio
-  Uma forma de 
+  Este repositorio tem como objetivo apresentar as características de uma verdadeira linguagem de programação - a Linguagem C, além das dicas e truques usados pelos programadores, através de múltiplos exemplos. 
 
 ## :tomato: Capítulo 1
 #  Primeiros conceitos de C
