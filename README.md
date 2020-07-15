@@ -326,6 +326,17 @@ void main(){
 
         **Qualquer operação em que pelo menos um dos operandos seja real produz um resultado do tipo real. Se algum dos operandos for, por exemplo, inteiro e um outro real, o inteiro é alterado para o tipo real (4 -> 4.0), para que se possa realizar a operação entre dois reais.**
 
+      ## **Caracteres — char**
+      - O tipo char permite armazenar **UM ÚNICO CARACTERE** numa variável desse tipo.
+
+         **char, independentemente da arquitetura utilizada, sempre se armazena num único byte.**
+        
+        Assim, o número de caracteres possíveis de representar é 256, pois é o número de combinações possíveis de representar num único byte (0…255).
+
+        <img src="Capitulo_2/screenshot/chat_bytes.png">
+
+
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT.
