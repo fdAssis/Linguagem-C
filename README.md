@@ -333,7 +333,82 @@ void main(){
         
         Assim, o número de caracteres possíveis de representar é 256, pois é o número de combinações possíveis de representar num único byte (0…255).
 
-        <img src="Capitulo_2/screenshot/chat_bytes.png">
+        <img src="Capitulo_2/screenshot/char_bytes.png">
+
+        **Para realizar uma carga automática de uma variável do tipo char deverá ser colocado o caractere a atribuir entre Aspas simples (Ex: 'A'), e não entre Aspas.**
+
+        ```C
+          #include <stdio.h>
+
+          main() {
+            printf("%cellWo%cld%c", 'H', 'r', '\n');
+          }
+        ```
+        <img src="Capitulo_2/screenshot/char_print_format.png">
+
+        A leitura de caracteres pode ser realizada sem ter que se recorrer à função scanf. Pode-se utilizar uma outra função desenhada unicamente para a leitura de um caractere — a função getchar(). Ela lê um caractere e devolve o caractere obtido como resultado da função, evitando a escrita de parâmetros, formatos, &ch etc.
+
+        **caractere lido <-  getchar();**
+
+        ```C
+          #include <stdio.h>
+
+          main(){
+            char ch;
+            
+            printf("Introduza um Caractere: ");
+            ch = getchar();
+
+            printf("O caractere introduzido foi '%c' \n" ch);
+          }
+        ```
+
+        **getchar() vs. scanf()**
+        - A função getchar evita a presença do formato de leitura (%c), pois o scanf é uma função genérica de leitura, enquanto o getchar é uma função especificamente dedicada à leitura de caracteres.
+
+        ***O tratamento de caracteres pode, no entanto, apresentar algumas surpresas. Observe com atenção o seguinte exemplo.***
+
+        ```C
+          #include <stdio.h>
+
+          char ch1, ch2;
+
+          main() {
+            
+            printf("Introduza um caractere: ");
+            scanf("%c", &ch1);
+
+            printf("Introduza outro caractere: ");
+            scanf("%c", &ch2);
+
+            printf("Os caracteres introduzido foram '%c' e '%c'\n, ch1, ch2);
+          }
+        ```
+        **A leitura de valores através da maioria das funções usa o **buffer** do teclado como repositório temporário dos caracteres que nós escrevemos. Se não estivéssemos usando o buffer do teclado, assim que batêssemos numa tecla o caractere seria automaticamente colocado na variável sem necessitar que fosse pressionada a tecla ENTER. Desse modo, quando solicitamos o primeiro caractere somos obrigados a escrever o caractere e teclar em ENTER. Assim, enviamos ao programa não um, mas dois caracteres.**
+
+        <img src="Capitulo_2/screenshot/char_buffer.png">
+
+        ***A solução é particularmente simples, e consiste em colocar um espaço em branco '□' imediatamente antes do %c do segundo scanf, mas dentro da string do formato.***
+
+        ```C
+          #include <stdio.h>
+
+          char ch1, ch2;
+
+          main() {
+            
+            printf("Introduza um caractere: ");
+            scanf("%c", &ch1);
+
+            printf("Introduza outro caractere: ");
+            scanf(" %c", &ch2);
+
+            printf("Os caracteres introduzido foram '%c' e '%c'\n, ch1, ch2);
+          }
+        ```
+        **O espaço em branco dentro de um scanf pede a essa função para ler e ignorar todos os Espaços em Branco, New Lines e Tabs que encontrar.**
+
+        ***Uma outra forma de resolver o problema consiste em limpar todos os caracteres que existam no buffer do teclado utilizando a função fflush(stdin);***
 
 
 
