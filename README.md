@@ -106,8 +106,8 @@ printf(" \"Amor:"\ muito dolososo. Evite, se possivel");
 ```c
 void main() {
   /* inicio do comentario 1
-    /* printf("42\n"); Comentário Interno */
-  */  
+    // printf("42\n"); 
+  */
 }
 ```
 ## :grapes: Capítulo 2
@@ -271,6 +271,60 @@ void main(){
         **O formato de leitura e escrita de variáveis inteiras sem sinal (unsigned int), utilizando as funções scanf e printf, é %u em vez de %d.**
 
        
+
+      ## **Reais — float e double**
+      - As variáveis declaradas do tipo float ou double são utilizadas para armazenar valores numéricos com parte fracionária. São também freqüentemente denominadas reais ou de ponto flutuante (Ex: 3.14, 0.0000024514, 1.0).
+
+        A diferença entre uma variável do tipo float e uma outra do tipo double é o número de bytes que reserva para armazenar o valor. A dimensão do float é normalmente de quatro bytes, enquanto a do double é de oito bytes.
+
+        ```C
+          #include<stdio.h>
+
+          main(){
+            float raio, perimetro;
+            double Pi = 3.1415927, area;
+
+            printf("Introduza o Raio da Circunferencia: ")
+            scanf("%f", &raio);
+            area = Pi * raio * raio;
+            perimetro = 2 * Pi * raio;
+
+            printf("Area = %f\n Perimetro = %f\n", area, perimetro);
+          }
+        ```
+        **O formato de leitura e escrita para números reais é %f.**
+
+      - A atribuição, a leitura e a escrita de números reais podem ser realizadas usando a notação científica, especificando uma base e um expoente.
+
+        ```C
+          #include<stdio.h>
+          
+          main(){
+            float quilos = 1.0E3;
+            double gramas = 1.0e6;
+
+            float num_toneladas;
+
+            printf("Quantas toneladas comprou: ");
+            scanf("%f", &num_toneladas);
+
+            printf("Numero de quilos = %f = %e\n", num_toneladas * quilos, num_toneladas * quilos);
+            printf("Numero de gramas = %f = %E\n", num_toneladas * gramas, num_toneladas * gramas);
+          }
+        ```
+        **Os valores, quando são armazenados em números de ponto flutuante, podem comportar algum erro mínimo, resultante de arredondamentos ou do formato interno de representação do mesmo.**
+
+        **Operações sobre Reais**
+
+        | Operação | Descrição | Exemplo | Resultado |
+        | --- | --- | ---| --- |
+        | + | Soma | 21.3 + 4.1 | 25.4|
+        | - | Subtração | 21.7 - 4.8 | 16.9|
+        | * | Multiplicação | 21.2 * 4.7 | 99.64|
+        | / | Divisão Real | 21.0 / 4.0 | 5.25 |
+        | % | Não faz sentido aplicar a reais | n.a. | n.a.|
+
+        **Qualquer operação em que pelo menos um dos operandos seja real produz um resultado do tipo real. Se algum dos operandos for, por exemplo, inteiro e um outro real, o inteiro é alterado para o tipo real (4 -> 4.0), para que se possa realizar a operação entre dois reais.**
 
 ## :memo: Licença
 

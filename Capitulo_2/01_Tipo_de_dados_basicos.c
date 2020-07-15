@@ -121,10 +121,4 @@ void main () {
   printf("O numero do caracter '%c' na tabela ASCII eh %d", caracter, (int)caracter);
   */
 
-  int teste01;
-  int teste02[10];
-
-  printf("Tamanho de teste01 = %i\n", sizeof(teste01));
-  printf("Tamanho de teste02 = %i", sizeof(teste02));
-
 }
