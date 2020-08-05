@@ -410,6 +410,18 @@ void main(){
 
         ***Uma outra forma de resolver o problema consiste em limpar todos os caracteres que existam no buffer do teclado utilizando a função fflush(stdin);***
 
+        **(Casting)**
+        - Sempre que numa variável ou expressão temos um valor de um determinado tipo e queremos modificar o tipo desse valor, alterando-o para um tipo maior ou para um tipo mais baixo, podemos indicar o tipo ao qual queremos “promover” esse valor colocando o tipo pretendido entre parênteses antes do valor.
+
+        <img src="Capitulo_2/screenshot/casting.png">
+
+        **Caracteres e Variações**
+        - Tal como o inteiro, um caractere também pode ser declarado com sinal (signed) ou sem sinal (unsigned).
+        Normalmente, declarar uma variável do tipo char é equivalente a declarar uma variável do tipo unsigned char, isto é, normalmente as variáveis do tipo char não têm sinal.
+
+        **Formatos de Leitura e Escrita**
+        <img src="Capitulo_2/screenshot/formato_leitura.png">
+
 
 
 ## :memo: Licença
