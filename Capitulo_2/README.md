@@ -232,7 +232,7 @@ void main(){
             printf("%cellWo%cld%c", 'H', 'r', '\n');
           }
         ```
-        <img src="../Capitulo_2/screenshot/char_print_format.png">
+        <img src="/Capitulo_2/screenshot/char_print_format.png">
 
         A leitura de caracteres pode ser realizada sem ter que se recorrer à função scanf. Pode-se utilizar uma outra função desenhada unicamente para a leitura de um caractere — a função getchar(). Ela lê um caractere e devolve o caractere obtido como resultado da função, evitando a escrita de parâmetros, formatos, &ch etc.
 
@@ -301,11 +301,11 @@ void main(){
         **(Casting)**
         - Sempre que numa variável ou expressão temos um valor de um determinado tipo e queremos modificar o tipo desse valor, alterando-o para um tipo maior ou para um tipo mais baixo, podemos indicar o tipo ao qual queremos “promover” esse valor colocando o tipo pretendido entre parênteses antes do valor.
 
-        <img src="../Capitulo_2/screenshot/casting.png">
+        <img src="/Capitulo_2/screenshot/casting.png">
 
         **Caracteres e Variações**
         - Tal como o inteiro, um caractere também pode ser declarado com sinal (signed) ou sem sinal (unsigned).
         Normalmente, declarar uma variável do tipo char é equivalente a declarar uma variável do tipo unsigned char, isto é, normalmente as variáveis do tipo char não têm sinal.
 
         **Formatos de Leitura e Escrita**
-        <img src="../Capitulo_2/screenshot/formato_leitura.png">
+        <img src="/Capitulo_2/screenshot/formato_leitura.png">
