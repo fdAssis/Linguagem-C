@@ -7,8 +7,19 @@
 - ## Operadores Relacionais
   - Em C existe um conjunto de seis operadores relacionais, os quais podem ser usados na avaliação de expressões. Seu objetivo consiste no estabelecimento de relações entre os operandos.
 
-    <img src="Capitulo_3/screenshot/operadores_relacionais.png">
+    <img src="../Capitulo_3/screenshot/operadores_relacionais.png">
 
     **Uma expressão que contenha um operador relacional devolve sempre como resultado o valor lógico VERDADE (1) ou FALSO (0).**
 
     ***Um erro muito freqüente em programação é a troca do operador == pelo operador =. O operador == verifica se duas expressões são iguais, enquanto o operador = é utilizado para a atribuição de valores a variáveis.***
+
+- ## if-else
+  - A instrução if-else é uma das instruções de controle de fluxo da linguagem C. Permite indicar quais as circunstâncias em que se deve executar determinada instrução ou conjunto de instruções.
+  
+  - A instrução if-else funciona da seguinte maneira:
+
+      - A condição é avaliada;
+
+      - Se o resultado da condição for verdadeiro, executa a instrução1;
+
+      - Se o resultado da condição for falso, executa a instrução2 (caso exista o else).

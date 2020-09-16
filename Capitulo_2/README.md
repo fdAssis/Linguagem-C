@@ -221,7 +221,7 @@ void main(){
         
         Assim, o número de caracteres possíveis de representar é 256, pois é o número de combinações possíveis de representar num único byte (0…255).
 
-        <img src="Capitulo_2/screenshot/char_bytes.png">
+        <img src="Linguagem-C/Capitulo_2/screenshot/char_bytes.png">
 
         **Para realizar uma carga automática de uma variável do tipo char deverá ser colocado o caractere a atribuir entre Aspas simples (Ex: 'A'), e não entre Aspas.**
 
@@ -232,7 +232,7 @@ void main(){
             printf("%cellWo%cld%c", 'H', 'r', '\n');
           }
         ```
-        <img src="Capitulo_2/screenshot/char_print_format.png">
+        <img src="../Capitulo_2/screenshot/char_print_format.png">
 
         A leitura de caracteres pode ser realizada sem ter que se recorrer à função scanf. Pode-se utilizar uma outra função desenhada unicamente para a leitura de um caractere — a função getchar(). Ela lê um caractere e devolve o caractere obtido como resultado da função, evitando a escrita de parâmetros, formatos, &ch etc.
 
@@ -274,7 +274,7 @@ void main(){
         ```
         **A leitura de valores através da maioria das funções usa o **buffer** do teclado como repositório temporário dos caracteres que nós escrevemos. Se não estivéssemos usando o buffer do teclado, assim que batêssemos numa tecla o caractere seria automaticamente colocado na variável sem necessitar que fosse pressionada a tecla ENTER. Desse modo, quando solicitamos o primeiro caractere somos obrigados a escrever o caractere e teclar em ENTER. Assim, enviamos ao programa não um, mas dois caracteres.**
 
-        <img src="Capitulo_2/screenshot/char_buffer.png">
+        <img src="../Capitulo_2/screenshot/char_buffer.png">
 
         ***A solução é particularmente simples, e consiste em colocar um espaço em branco '□' imediatamente antes do %c do segundo scanf, mas dentro da string do formato.***
 
@@ -301,11 +301,11 @@ void main(){
         **(Casting)**
         - Sempre que numa variável ou expressão temos um valor de um determinado tipo e queremos modificar o tipo desse valor, alterando-o para um tipo maior ou para um tipo mais baixo, podemos indicar o tipo ao qual queremos “promover” esse valor colocando o tipo pretendido entre parênteses antes do valor.
 
-        <img src="Capitulo_2/screenshot/casting.png">
+        <img src="../Capitulo_2/screenshot/casting.png">
 
         **Caracteres e Variações**
         - Tal como o inteiro, um caractere também pode ser declarado com sinal (signed) ou sem sinal (unsigned).
         Normalmente, declarar uma variável do tipo char é equivalente a declarar uma variável do tipo unsigned char, isto é, normalmente as variáveis do tipo char não têm sinal.
 
         **Formatos de Leitura e Escrita**
-        <img src="Capitulo_2/screenshot/formato_leitura.png">
+        <img src="../Capitulo_2/screenshot/formato_leitura.png">
