@@ -221,7 +221,7 @@ void main(){
         
         Assim, o número de caracteres possíveis de representar é 256, pois é o número de combinações possíveis de representar num único byte (0…255).
 
-        <img src="Linguagem-C/Capitulo_2/screenshot/char_bytes.png">
+        <img src="/Capitulo_2/screenshot/char_bytes.png">
 
         **Para realizar uma carga automática de uma variável do tipo char deverá ser colocado o caractere a atribuir entre Aspas simples (Ex: 'A'), e não entre Aspas.**
 
