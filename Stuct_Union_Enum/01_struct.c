@@ -51,12 +51,27 @@ int main()
   */
   struct pessoa pessoa2 = {"DeAssis", "Rau1", 31, 403};
   printPessoa(pessoa2);
+
   /*
     Campos nao definidos sao inicializados com zero ou com uma string vazia ("")
   */
-
   struct pessoa pessoa3 = {"Pessoa_3", "Rua2", 10};
   printPessoa(pessoa3);
+
+  //COM STRUCT
+  struct pessoa p1, p2, p3, p4;
+
+  /*
+    A "struct" eh um tipo de dado, e portanto a linguagem C suporta a declaracao
+    de um array de estrutura
+  */
+
+  //COM STRUCT E COM ARRAY
+  struct pessoa p[4];
+  p[0].idade = 30;
+  p[1].idade = 20;
+  p[2].idade = 23;
+  p[3].idade = 7;
 
   system("pause");
 
