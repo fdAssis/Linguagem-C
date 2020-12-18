@@ -13,7 +13,7 @@ struct pessoa
     int numero;
   };
 
-  struct pessoa{
+  struct pessoa_anin{
     char nome[50];
     int idade;
     struct endereco ender;
@@ -87,7 +87,7 @@ int main()
 
 
   //Animhamento de Structs
-  struct pessoa pessoa_aninhada;
+  struct pessoa_anin pessoa_aninhada;
   pessoa_aninhada.idade = 31;
   pessoa_aninhada.ender.numero = 102;
 
