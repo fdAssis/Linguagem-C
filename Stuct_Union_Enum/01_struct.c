@@ -7,6 +7,18 @@ struct pessoa
   int idade, numero;
 };
 
+// Animnhamento de structs
+  struct endereco{
+    char rua[50];
+    int numero;
+  };
+
+  struct pessoa{
+    char nome[50];
+    int idade;
+    struct endereco ender;
+  };
+
 void printPessoa(struct pessoa p)
 {
   printf("\n");
@@ -72,6 +84,13 @@ int main()
   p[1].idade = 20;
   p[2].idade = 23;
   p[3].idade = 7;
+
+
+  //Animhamento de Structs
+  struct pessoa pessoa_aninhada;
+  pessoa_aninhada.idade = 31;
+  pessoa_aninhada.ender.numero = 102;
+
 
   system("pause");
 
